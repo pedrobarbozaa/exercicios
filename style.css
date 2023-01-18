@@ -60,9 +60,11 @@ header h1 {
     padding: 5px;
     border-radius: 5px;
     cursor: pointer;
+    transition: ;
 } 
 .register button:hover {
     background-color: darkolivegreen;
+    border-color: darkolivegreen;
 }
 
 
