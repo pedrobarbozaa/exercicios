@@ -1,0 +1,11 @@
+h1,p {
+  text-align: center;
+}
+ol li:hover {
+  background-color: brown;
+  font-family: monospace;
+  border-style: solid;
+}
+.list {
+  list-style: none;
+}
