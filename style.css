@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(30, 38, 35);
+    color: white;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: green;
+}
+
+header h1 {
+    margin: 0 auto;
+    width: fit-content;
+    padding: 20px;
+}
+
+#registers {
+    margin: 0 auto;
+    width: 200px;
+    padding: 80px 0;
+}
+
+.register {
+    background-color: darkolivegreen;
+    margin: 15px 0;
+    border-radius: 15px;
+    padding: 20px;
+    position: relative;
+}
+
+.register.income .amount {
+    color: lightgreen;
+}
+
+.register.expense .amount {
+    color: crimson;
+}
+
+.register.expense .amount ::before {
+    content: '-R$;'
+}
+
+.register.income .amount ::before {
+    content: 'R$';   
+}
+
+.register button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: transparent;
+    color: whitesmoke;
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+} 
+.register button:hover {
+    background-color: darkolivegreen;
+}
+
+
+.register button:first-of-type {
+    right: 80px;
+}
