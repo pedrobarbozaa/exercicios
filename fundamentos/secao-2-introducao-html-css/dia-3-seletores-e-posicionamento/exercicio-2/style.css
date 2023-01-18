@@ -1,0 +1,21 @@
+h3:hover {
+  border-style: solid;
+}
+.pri {
+  color: blue;
+}
+.sec {
+  color: orange;
+}
+.com {
+  color: purple;
+}
+.dark {
+  color: darkslategray;
+}
+.light {
+  color: lightgreen;
+}
+.big {
+  font-size: x-large;
+}
