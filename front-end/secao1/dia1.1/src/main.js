@@ -5,14 +5,24 @@ const selectorEl = document.getElementById('selector');
 const btnEl = document.getElementById('button');
 const outputEl = document.getElementById('output')
 
-button.addEventListener('click', () => {
+btnEl.addEventListener('click', () => {
   const inputValue = inputEl.value;
   const selectorValue = selectorEl.value;
 
   if (selectorValue === 'email') {
-    console.log(validator.isEmail(inputValue));
+    if (validator.isEmail(inputValue)) {
+      outputEl.innerHTML = 'E-mail válido';
+    } 
+    if (!validator.isEmail(inputValue)) {
+      outputEl.innerHTML = 'E-mail inválido';
+    }
   }
   if (selectorValue === 'url') {
-    console.log(validator.isURL(inputValue));
+    if (validator.isURL(inputValue)) {
+      outputEl.innerHTML = 'URL válida';
+    } 
+    if (!validator.isURL(inputValue)) {
+      outputEl.innerHTML = 'URL inválida';
+    }
   }
 })
